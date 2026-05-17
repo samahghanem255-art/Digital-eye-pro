@@ -156,9 +156,6 @@ const newsData = [
    source:'الفايننشال تايمز',time:'منذ 3 ساعات',readTime:'3 دقائق',
    img:'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&h=200&fit=crop',fake:false,views:'6.8K'}
 ];
-
-/* ============ REAL YOUTUBE VIDEOS ============ */
-/* 
   /* ============ REAL ALGERIAN NEWS VIDEOS ============ */
 const videosData = [
   {
