@@ -157,16 +157,14 @@ const newsData = [
    img:'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&h=200&fit=crop',fake:false,views:'6.8K'}
 ];
   /* ============ REAL ALGERIAN NEWS VIDEOS ============ */
-const videosData = [
-  {
+const videosData 
     id: 'i6_s2Narq4E',
     title: 'رئيس الجمهورية يوجه خطاباً للأمة أمام البرلمان — حصيلة 2025 ورهانات 2026',
     channel: '🇩🇿 الشروق نيوز',
     thumb: 'https://img.youtube.com/vi/i6_s2Narq4E/mqdefault.jpg',
     thumbFallback: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=220&fit=crop',
     duration: '28:14', views: '320K', date: 'ديسمبر 2025'
-  },
-  {
+  
     id: '7pYaw-F3leI',
     title: 'الاقتصاد الجزائري في سنة 2025 — ما الذي تحقق وماذا ينتظر؟',
     channel: '🇩🇿 الشروق نيوز',
