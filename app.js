@@ -158,57 +158,62 @@ const newsData = [
 ];
 
 /* ============ REAL YOUTUBE VIDEOS ============ */
-/* فيديوهات حقيقية من قنوات إخبارية عالمية */
+/* 
+  /* ============ REAL ALGERIAN NEWS VIDEOS ============ */
 const videosData = [
   {
-    id:'q-y-z_Q1xKI',
-    title:'تقرير الجزيرة: مستقبل الذكاء الاصطناعي في الإعلام',
-    channel:'قناة الجزيرة',
-    thumb:'https://img.youtube.com/vi/q-y-z_Q1xKI/mqdefault.jpg',
-    thumbFallback:'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=220&fit=crop',
-    duration:'12:34',views:'1.2M',date:'منذ أسبوع'
+    id: 'i6_s2Narq4E',
+    title: 'رئيس الجمهورية يوجه خطاباً للأمة أمام البرلمان — حصيلة 2025 ورهانات 2026',
+    channel: '🇩🇿 الشروق نيوز',
+    thumb: 'https://img.youtube.com/vi/i6_s2Narq4E/mqdefault.jpg',
+    thumbFallback: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=220&fit=crop',
+    duration: '28:14', views: '320K', date: 'ديسمبر 2025'
   },
   {
-    id:'K_0gA0pz-FM',
-    title:'BBC عربي: الأخبار المزيفة وتأثيرها على الرأي العام',
-    channel:'BBC Arabic',
-    thumb:'https://img.youtube.com/vi/K_0gA0pz-FM/mqdefault.jpg',
-    thumbFallback:'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=220&fit=crop',
-    duration:'18:22',views:'890K',date:'منذ 3 أيام'
+    id: '7pYaw-F3leI',
+    title: 'الاقتصاد الجزائري في سنة 2025 — ما الذي تحقق وماذا ينتظر؟',
+    channel: '🇩🇿 الشروق نيوز',
+    thumb: 'https://img.youtube.com/vi/7pYaw-F3leI/mqdefault.jpg',
+    thumbFallback: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=220&fit=crop',
+    duration: '22:40', views: '198K', date: 'ديسمبر 2025'
   },
   {
-    id:'2lP4uFEXsEk',
-    title:'CNN: ثورة البيانات الضخمة في صناعة الإعلام الرقمي',
-    channel:'CNN Arabic',
-    thumb:'https://img.youtube.com/vi/2lP4uFEXsEk/mqdefault.jpg',
-    thumbFallback:'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=220&fit=crop',
-    duration:'09:47',views:'654K',date:'منذ 5 أيام'
+    id: 'vkorYiydN7s',
+    title: 'حصاد 2025 — التربية الوطنية: ما تحقق وما ينتظر المدرسة الجزائرية؟',
+    channel: '🇩🇿 الشروق نيوز',
+    thumb: 'https://img.youtube.com/vi/vkorYiydN7s/mqdefault.jpg',
+    thumbFallback: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=220&fit=crop',
+    duration: '19:55', views: '145K', date: 'ديسمبر 2025'
   },
   {
-    id:'Fg-xKyONQaM',
-    title:'العربية: تحقيق في انتشار الأخبار الزائفة على الإنترنت',
-    channel:'قناة العربية',
-    thumb:'https://img.youtube.com/vi/Fg-xKyONQaM/mqdefault.jpg',
-    thumbFallback:'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=220&fit=crop',
-    duration:'22:15',views:'2.1M',date:'منذ أسبوعين'
+    id: 'fbN08xupf0E',
+    title: 'الجزائر في سنة 2025 — تحديات سياسية واقتصادية واعدة',
+    channel: '🇩🇿 الشروق نيوز',
+    thumb: 'https://img.youtube.com/vi/fbN08xupf0E/mqdefault.jpg',
+    thumbFallback: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&h=220&fit=crop',
+    duration: '31:08', views: '412K', date: 'جانفي 2025'
   },
   {
-    id:'nPTFRZmNRYI',
-    title:'فرانس 24: كيف يغير الذكاء الاصطناعي مهنة الصحافة؟',
-    channel:'France 24 Arabic',
-    thumb:'https://img.youtube.com/vi/nPTFRZmNRYI/mqdefault.jpg',
-    thumbFallback:'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=220&fit=crop',
-    duration:'14:58',views:'445K',date:'منذ أسبوعين'
+    id: 'AWbNhMTT2f8',
+    title: 'الأخبار المحلية الجزائرية ليوم الثلاثاء 29 أفريل 2025',
+    channel: '🇩🇿 الشروق نيوز',
+    thumb: 'https://img.youtube.com/vi/AWbNhMTT2f8/mqdefault.jpg',
+    thumbFallback: 'https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=220&fit=crop',
+    duration: '14:22', views: '87K', date: 'أفريل 2025'
   },
   {
-    id:'L_jWHffIx5E',
-    title:'DW عربية: حرية الصحافة في العالم الرقمي 2025',
-    channel:'DW Arabic',
-    thumb:'https://img.youtube.com/vi/L_jWHffIx5E/mqdefault.jpg',
-    thumbFallback:'https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=220&fit=crop',
-    duration:'28:30',views:'320K',date:'منذ شهر'
+    id: 'D5dvutXpsmI',
+    title: 'الشروق مورنينغ — هكذا مرت سنة 2025 على الجزائريين',
+    channel: '🇩🇿 الشروق نيوز',
+    thumb: 'https://img.youtube.com/vi/D5dvutXpsmI/mqdefault.jpg',
+    thumbFallback: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=220&fit=crop',
+    duration: '42:17', views: '560K', date: 'ديسمبر 2025'
   }
 ];
+  {
+    i
+  }
+
 
 /* ============ STATE ============ */
 let currentLang = 'ar';
