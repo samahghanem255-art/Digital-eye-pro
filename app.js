@@ -751,18 +751,49 @@ function openStudioTool(tool){
     </button>`);
 }
 
+
 /* ============ CONTACT ============ */
-function submitContact(e){
+async function submitContact(e) {
   e.preventDefault();
-  const btn=e.target.querySelector('button[type="submit"]');
-  const orig=btn.innerHTML;
-  btn.disabled=true;btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> جارٍ الإرسال...';
-  setTimeout(()=>{
-    btn.disabled=false;btn.innerHTML=orig;
-    e.target.reset();
+
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.innerHTML;
+
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جارٍ الإرسال...';
+
+  try {
+    const formData = new FormData(form);
+
+    const name = (formData.get('name') || '').trim();
+    const email = (formData.get('email') || '').trim();
+    const subject = (formData.get('subject') || '').trim();
+    const message = (formData.get('message') || '').trim();
+
+    const { error } = await window.supabaseClient
+      .from('contact_messages')
+      .insert([{
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      }]);
+
+    if (error) throw error;
+
+    form.reset();
     showToast('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً ✓');
-  },2000);
+
+  } catch (error) {
+    console.error('Contact error:', error);
+    showToast('تعذر إرسال الرسالة. يرجى المحاولة مجدداً ⚠️');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = originalText;
+  }
 }
+
 
 /* ============ NEWSLETTER ============ */
 function subscribeNewsletter(){
